@@ -4,138 +4,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9e1546c7fe.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Tally</title>
   </head>
   <body>
-    <section class="">
-      <div>
-        <img src="" alt="" />
-        <div>
-          <span>Annette</span>
-          <img src="" alt="" />
+    <section class="payment">
+      <nav class="navigation">
+        <div class="logo">
+          <img src="./img/patricia.svg" alt="" class="logo-img" />
+        </div>
+
+        <div class="user">
+          <p class="user-name">
+            <span class="fas fa-chevron-down user-icon"></span> Annette
+          </p>
+          <img src="./img/tally.png" alt="" class="user-img" />
+        </div>
+      </nav>
+
+      <div class="payment-sub">
+        <h2 class="payment-sub__title">Payment details</h2>
+        <div class="payment-sub__secure">
+          <span class="fas fa-lock lock-icon"></span>
+          <div>
+            <p class="payment-sub__secure-title">Card is secure</p>
+            <p class="payment-sub__secure-small">
+              Your data is protected, <br />
+              everything will be private.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div>
-        <h2>Payment Details</h2>
-        <div>
-          <p>Card is secure</p>
-          <p>Your data is protected, everything will be private.</p>
+      <ul class="payment-type">
+        <li class="payment-type__list payment-type__list-active">
+          Credit Card
+        </li>
+        <li class="payment-type__list">Paypal</li>
+        <li class="payment-type__list">Other</li>
+      </ul>
+
+      <div class="payment-details">
+        <div class="payment-cards">
+          <div class="payment-card blue-card">
+            <p class="payment-card-number">**** 4323</p>
+            <span class="fab fa-cc-mastercard card-icon"></span>
+          </div>
+          <div class="payment-card brown-card">
+            <p class="payment-card-number">**** 5442</p>
+            <span class="fab fa-cc-visa card-icon"></span>
+          </div>
+
+          <div class="payment-card green-card">
+            <span class="fas fa-check-circle add-new-card"></span>
+            <p>
+              Add new card
+              <span class="fas fa-plus-circle add-new-card-icon"></span>
+            </p>
+          </div>
         </div>
-      </div>
+        <div class="payment-form">
+          <form action="">
+            <div class="form-group">
+              <label for="cardNumber">Credit card</label>
+              <input type="text" name="" id="" value="4441 2354 3266 5655" />
+            </div>
+            <div class="form-group">
+              <label for="cardNumber">Name</label>
+              <input type="text" name="" id="" value="Annette Murphy" />
+            </div>
 
-      <div>
-        <ul>
-          <li>Credit Card</li>
-          <li>Paypal</li>
-          <li>Other</li>
-        </ul>
-      </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cardNumber">Expiration date</label>
+                <input type="text" name="" id="" value="08 / 2021" />
+              </div>
 
-      <div>
-        <div>
-          <div>Card</div>
-          <div>Card</div>
-          <div>Card</div>
-        </div>
-        <div>
-            <form action="">
-                <div>
-                    <label for="cardNumber">Credit card</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for="cardNumber">Name</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <label for="cardNumber">Credit card</label>
-                    <input type="text" name="" id="">
-                </div>
+              <div class="form-group">
+                <label for="cardNumber">CVV</label>
+                <input type="number" class="cvv" name="" id="" value="407" />
+              </div>
+            </div>
 
-                <div>
-                    <label for="cardNumber">Credit card</label>
-                    <input type="text" name="" id="">
-                </div>
-
-                <div>
-                    <button>Confirm order</button>
-                    <button>Cancel and Return</button>
-                </div>
-            </form>
+            <div class="action-btn">
+              <button class="btn confirm-btn">Confirm order</button>
+              <button class="btn cancel-btn">Cancel and Return</button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Order summary</h2>
-      <div>
-        <div>
-          <span>icon</span>
+    <section class="order">
+      <h2 class="order-title">Order summary</h2>
+      <div class="order-steps">
+        <div class="order-step">
+          <p class="order-step__icon order-step__icon-blue">
+            <i class="fas fa-shopping-cart"></i>
+          </p>
           <div>
-            <p>Step 1</p>
-            <p>Shipping</p>
+            <p class="order-step__step">Step 1</p>
+            <p class="order-step__sub">Shipping</p>
           </div>
+        </div>
 
-          <span>icon</span>
+        <div class="order-step">
+          <p class="order-step__icon order-step__icon-brown">
+            <i class="fas fa-credit-card"></i>
+          </p>
           <div>
-            <p>Step 2</p>
-            <p>Payment</p>
+            <p class="order-step__step">Step 2</p>
+            <p class="order-step__sub order-step__active">Payment</p>
           </div>
+        </div>
 
-          <span>icon</span>
+        <div class="order-step">
+          <p class="order-step__icon order-step__icon-green">
+            <i class="fas fa-sync-alt"></i>
+          </p>
           <div>
-            <p>Step 3</p>
-            <p>Review</p>
+            <p class="order-step__step">Step 3</p>
+            <p class="order-step__sub">Review</p>
           </div>
         </div>
       </div>
 
-      <ul>
-        <li>
-          <div>
-            <p>Prada</p>
-            <p>icon</p>
+      <ul class="order-lists">
+        <li class="order-list">
+          <div class="order-list__tab">
+            <p class="order-list__title">Prada</p>
+            <p><i class="fas fa-chevron-up"></i></p>
           </div>
 
-          <div>
-            <div>
-              <span>Leather mini-bag</span>
-              <span>$1850.00</span>
+          <div class="order-items">
+            <div class="order-item">
+              <span class="order-item__name">Leather mini-bag</span>
+              <span class="order-item__price">$1850.00</span>
             </div>
-            <div>
-              <span>Estimate Shipping</span>
-              <span>$370.00</span>
+            <div class="order-item">
+              <span class="order-item__name">Estimate Shipping</span>
+              <span class="order-item__price">$370.00</span>
             </div>
-            <div>
-              <span>Discount</span>
-              <span>$0.00</span>
+            <div class="order-item">
+              <span class="order-item__name">Discount</span>
+              <span class="order-item__price">$0.00</span>
             </div>
-            <div>
-              <span>Total</span>
-              <span>$2220.00</span>
+            <div class="order-item">
+              <span class="order-item__name">Total</span>
+              <span class="order-item__price">$2220.00</span>
             </div>
-          </div>
-        </li>
-
-        <li>
-          <div>
-            <p>Dr. Martens</p>
-            <p>icon</p>
           </div>
         </li>
 
-        <li>
-          <div>
-            <p>Chanel</p>
-            <p>icon</p>
+        <li class="order-list">
+          <div class="order-list__tab">
+            <p class="order-list__title">Dr. Martens</p>
+            <p><i class="fas fa-chevron-down"></i></p>
+          </div>
+        </li>
+
+        <li class="order-list">
+          <div class="order-list__tab">
+            <p class="order-list__title">Chanel</p>
+            <p><i class="fas fa-chevron-down"></i></p>
           </div>
         </li>
       </ul>
 
-      <div>
-        <p>Total Amount:</p>
-        <p>$3680.00</p>
+      <div class="order-final">
+        <p class="">Total Amount:</p>
+        <p class="order-final__amount">$3680.00</p>
       </div>
     </section>
   </body>
