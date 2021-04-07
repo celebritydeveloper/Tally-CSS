@@ -1,0 +1,14 @@
+$background-color: #A2B6BB;
+$black: #111414;
+$light-blue: #A2B5E4;
+$light-brown: #BAA65E;
+$brown: #8A6D58;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: lighten($color: $light-blue, $amount: 19 );
+}
